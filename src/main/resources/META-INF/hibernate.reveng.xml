@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="saude_rec" match-name="academias_da_cidade"/>
+  <table-filter match-catalog="saude_rec" match-name="bairros_2011"/>
+  <table-filter match-catalog="saude_rec" match-name="bairros_2012"/>
+  <table-filter match-catalog="saude_rec" match-name="bairros_2013"/>
+  <table-filter match-catalog="saude_rec" match-name="centros_especialidades_odontologicas"/>
+  <table-filter match-catalog="saude_rec" match-name="distritos_2011"/>
+  <table-filter match-catalog="saude_rec" match-name="distritos_2012"/>
+  <table-filter match-catalog="saude_rec" match-name="distritos_2013"/>
+  <table-filter match-catalog="saude_rec" match-name="especialidades_medicas_2011"/>
+  <table-filter match-catalog="saude_rec" match-name="especialidades_medicas_2012"/>
+  <table-filter match-catalog="saude_rec" match-name="especialidades_medicas_2013"/>
+  <table-filter match-catalog="saude_rec" match-name="farmacias_da_familia"/>
+  <table-filter match-catalog="saude_rec" match-name="hospitais"/>
+  <table-filter match-catalog="saude_rec" match-name="hospitais_2013"/>
+  <table-filter match-catalog="saude_rec" match-name="nasf"/>
+  <table-filter match-catalog="saude_rec" match-name="policlinicas"/>
+  <table-filter match-catalog="saude_rec" match-name="remocoes_2011"/>
+  <table-filter match-catalog="saude_rec" match-name="remocoes_2012"/>
+  <table-filter match-catalog="saude_rec" match-name="remocoes_2013"/>
+  <table-filter match-catalog="saude_rec" match-name="sadt"/>
+  <table-filter match-catalog="saude_rec" match-name="saude_mental"/>
+  <table-filter match-catalog="saude_rec" match-name="solicitacoes_2011"/>
+  <table-filter match-catalog="saude_rec" match-name="solicitacoes_2012"/>
+  <table-filter match-catalog="saude_rec" match-name="solicitacoes_2013"/>
+  <table-filter match-catalog="saude_rec" match-name="spa"/>
+  <table-filter match-catalog="saude_rec" match-name="ubs"/>
+  <table-filter match-catalog="saude_rec" match-name="unidades_especializadas"/>
+  <table-filter match-catalog="saude_rec" match-name="usf"/>
+  <table-filter match-catalog="saude_rec" match-name="viatura2011"/>
+  <table-filter match-catalog="saude_rec" match-name="viatura2012"/>
+  <table-filter match-catalog="saude_rec" match-name="viatura2013"/>
+</hibernate-reverse-engineering>
