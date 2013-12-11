@@ -5,10 +5,10 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
-import model.Bairros2013;
-import model.Hospitais2013;
-import model.Remocoes2013;
+import model.Solicitacoes2013;
+import model.Viatura2013;
 
 public class ReadingTest{
 	
@@ -16,12 +16,13 @@ public class ReadingTest{
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("saude_rec");
 		EntityManager manager = factory.createEntityManager();
 		
-		String consulta = "select h from " + Bairros2013.class.getName() + " h";
-		List<Bairros2013> bairros = manager.createQuery(consulta).getResultList();
+		String consulta = "SELECT H FROM " + Solicitacoes2013.class.getName() + " H";
+		TypedQuery<Solicitacoes2013> query = manager.createQuery(consulta, Solicitacoes2013.class);
+		List<Solicitacoes2013> solicitacoes = query.getResultList();
 				
 		System.out.println("Lista de Remoções que o SAMU fez em 2013");
-		for(Bairros2013 bairro : bairros){
-			System.out.println(bairro.getDescricao());
+		for(Solicitacoes2013 distrito : solicitacoes){
+			System.out.println(distrito.getId().getDataChegada());
 		}
 	}
 }

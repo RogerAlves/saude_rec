@@ -1,6 +1,6 @@
 package model;
 
-// Generated 08/12/2013 19:30:13 by Hibernate Tools 4.0.0
+// Generated 11/12/2013 01:39:05 by Hibernate Tools 4.0.0
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
