@@ -22,6 +22,7 @@
   <table-filter match-catalog="saude_rec" match-name="remocoes_2012"/>
   <table-filter match-catalog="saude_rec" match-name="remocoes_2013"/>
   <table-filter match-catalog="saude_rec" match-name="sadt"/>
+  <table-filter match-catalog="saude_rec" match-name="samu2013"/>
   <table-filter match-catalog="saude_rec" match-name="saude_mental"/>
   <table-filter match-catalog="saude_rec" match-name="solicitacoes_2011"/>
   <table-filter match-catalog="saude_rec" match-name="solicitacoes_2012"/>

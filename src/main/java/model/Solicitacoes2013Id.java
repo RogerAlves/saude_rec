@@ -1,6 +1,6 @@
 package model;
 
-// Generated 11/12/2013 01:39:05 by Hibernate Tools 4.0.0
+// Generated 14/12/2013 01:12:12 by Hibernate Tools 4.0.0
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -11,10 +11,6 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Solicitacoes2013Id implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private Integer solicitacaoNumero;
 	private String solicitacaoData;
 	private String pacienteSexo;
