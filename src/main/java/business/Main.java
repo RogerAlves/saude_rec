@@ -24,7 +24,7 @@ public class Main {
 		int repeticoesParcial = 0;
 		int codigoMaisRepetido = 0;
 		
-		for(int j = 0; j < codigosOrdenados.length; j++){
+		for(int j = 0; j <= codigosOrdenados.length; j++){
 			for(int i = 1; i < tamanho; i++){
 				if(codigoChecado(codigos[i])){
 					
@@ -40,17 +40,31 @@ public class Main {
 					}
 				}
 			}
-			this.codigosOrdenados[j] = codigoMaisRepetido;
-			repeticoesMax = 0;
-			repeticoesParcial = 0;
+			
+			if(j != 0){
+				if(codigosOrdenados[j-1] == codigoMaisRepetido){
+					j = codigosOrdenados.length;
+				} else {
+					this.adicionarCodigo(codigoMaisRepetido, j);
+					repeticoesMax = 0;
+					repeticoesParcial = 0;				}
+			} else{
+				this.adicionarCodigo(codigoMaisRepetido, j);
+				repeticoesMax = 0;
+				repeticoesParcial = 0;
+			}
 		}
 		
 		System.out.println("RANKING DE CHAMADOS AO SAMU EM 2011" + "\n" + "-------------");
 		
 		String resposta = "";
 		for (int i = 0; i < this.codigosOrdenados.length; i++){
-			 resposta += "Bairro: " + this.codigosOrdenados[i] + "\n";
-			 resposta += ManipulateCalled.localizarBairro(this.codigosOrdenados[i]) + "\n" + "\n";
+			if(this.codigosOrdenados[i] == 0){
+				break;
+			} else {
+				resposta += "Bairro: " + this.codigosOrdenados[i] + "\n";
+				resposta += ManipulateCalled.localizarBairro(this.codigosOrdenados[i]) + "\n" + "\n";
+			}
 		}
 		return resposta;
 		
@@ -63,6 +77,10 @@ public class Main {
 			}
 		}
 		return false;
+	}
+	
+	public void adicionarCodigo(int codigo, int index){
+		this.codigosOrdenados[index] = codigo;
 	}
 
 }
