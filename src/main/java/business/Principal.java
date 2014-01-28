@@ -43,67 +43,6 @@ public class Principal {
 	private double ias;
 	private final int[] pesosIas = {1, 1, 2, 1, 5, 2, 2, 2, 2, 2, 2, 2};
 	
-	/*public String ordenarChamadosBairros(){
-		List<Samu2013> solicitacoes = ManipularChamados.getChamados();
-		int tamanho = solicitacoes.size();
-		int codigos[] = new int[tamanho];
-		for(int i = 0; i < tamanho; i++){
-			codigos[i] = solicitacoes.get(i).getId().getBairrosaudeCodigo();
-		}
-		
-		Arrays.sort(codigos);
-		
-		int repeticoesMax = 0;
-		int repeticoesParcial = 0;
-		int codigoMaisRepetido = 0;
-		
-		for(int j = 0; j <= codigosOrdenados.length; j++){
-			for(int i = 1; i < tamanho; i++){
-				if(codigoChecado(codigos[i])){
-					
-				} else {
-					if(codigos[i] == codigos[i-1]){
-						repeticoesParcial += 1;
-						if(repeticoesParcial > repeticoesMax){
-							codigoMaisRepetido = codigos[i];
-							repeticoesMax = repeticoesParcial;
-						}
-					} else {
-						repeticoesParcial = 0;
-					}
-				}
-			}
-			
-			if(j != 0){
-				if(codigosOrdenados[j-1] == codigoMaisRepetido){
-					j = codigosOrdenados.length;
-				} else {
-					this.adicionarCodigo(codigoMaisRepetido, j, repeticoesMax);
-					repeticoesMax = 0;
-					repeticoesParcial = 0;				}
-			} else{
-				this.adicionarCodigo(codigoMaisRepetido, j, repeticoesMax);
-				repeticoesMax = 0;
-				repeticoesParcial = 0;
-			}
-		}
-		
-		System.out.println("RANKING DE CHAMADOS AO SAMU EM 2013" + "\n" + "-------------");
-		
-		String resposta = "";
-		for (int i = 0; i < this.codigosOrdenados.length; i++){
-			if(this.codigosOrdenados[i] == 0){
-				break;
-			} else {
-				resposta += "Bairro: " + this.codigosOrdenados[i] + "\n";
-				resposta += "Número de Chamados em 2013: " + this.chamadosBairros[i] + "\n";
-				resposta += ManipularChamados.localizarBairro(this.codigosOrdenados[i]) + "\n" + "\n";
-			}
-		}
-		return resposta;
-		
-	}*/
-	
 	public void rankingBairros(){
 		List<Samu2013> solicitacoes = ManipularChamados.getChamados();
 		int tamanho = solicitacoes.size();
@@ -179,21 +118,7 @@ public class Principal {
 		this.codigosOrdenados[index] = codigo;
 		this.chamadosBairros[index] = numeroChamados;
 	}
-	
-	/*public String chamdosBairro(String nomeBairro){
-		String resposta = "";
-		List<Samu2013> chamados = ManipularChamados.chamadosBairro(nomeBairro);
-		System.out.println("Chamados realizados em 2013 pelo bairro " + nomeBairro + " para o SAMU");
-		for(int i = 0; i < chamados.size(); i++){
-			resposta += "Número da Solicitação: " + chamados.get(i).getId().getSolicitacaoNumero() + "\n";
-			resposta += "Data do Chamado: " + chamados.get(i).getId().getSolicitacaoData() + "\n";
-			resposta += "Origem do Chamado: " + chamados.get(i).getId().getOrigemchamadoDescricao() + "\n";
-			resposta += "Situação Atual do Atendimento: " + chamados.get(i).getId().getSituacaosolicitacaoDescricao() + "\n" + "\n";
-			
-		}
-		return resposta;
-	}*/
-	
+		
 	public void unidadesBairro(String nomeBairro){
 		this.academiasBairro = ManipularUnidadesSaude.getAcademias(nomeBairro);
 		this.ceos = ManipularUnidadesSaude.getCeo(nomeBairro);
@@ -372,6 +297,4 @@ public class Principal {
 	public void setIas(double ias) {
 		this.ias = ias;
 	}
-
-
 }

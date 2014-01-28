@@ -28,8 +28,6 @@ public class ManipularUnidadesSaude {
 		
 		String consulta = "SELECT H FROM " + AcademiasDaCidade.class.getName() + " H WHERE NOME_BAIRRO = :nomebairro";
 		
-		/*String consulta = "select h from " + AcademiasDaCidade.class.getName() + " h";*/
-		
 		TypedQuery<AcademiasDaCidade> query = manager.createQuery(consulta, AcademiasDaCidade.class);
 		query.setParameter("nomebairro", nomeBairro);
 		List<AcademiasDaCidade> academias = query.getResultList();
@@ -43,8 +41,6 @@ public class ManipularUnidadesSaude {
 		
 		String consulta = "SELECT H FROM " + CentrosEspecialidadesOdontologicas.class.getName() + " H WHERE NOME_BAIRRO = '" + nomeBairro + "'";
 		
-		/*String consulta = "select h from " + CentrosEspecialidadesOdontologicas.class.getName() + " h";*/
-		
 		TypedQuery<CentrosEspecialidadesOdontologicas> query = manager.createQuery(consulta, CentrosEspecialidadesOdontologicas.class);
 		List<CentrosEspecialidadesOdontologicas> ceo = query.getResultList();
 		
@@ -56,8 +52,6 @@ public class ManipularUnidadesSaude {
 		EntityManager manager = factory.createEntityManager();
 		
 		String consulta = "SELECT H FROM " + FarmaciasDaFamilia.class.getName() + " H WHERE BAIRRO = '" + nomeBairro + "'";
-		
-		/*String consulta = "select h from " + FarmaciasDaFamilia.class.getName() + " h";*/
 		
 		TypedQuery<FarmaciasDaFamilia> query = manager.createQuery(consulta, FarmaciasDaFamilia.class);
 		List<FarmaciasDaFamilia> farmacias = query.getResultList();
@@ -77,8 +71,6 @@ public class ManipularUnidadesSaude {
 			EntityManager manager = factory.createEntityManager();
 			
 			String consulta = "SELECT H FROM " + Hospitais2013.class.getName() + " H WHERE BAIRROSAUDE_CODIGO = '" + codigoBairro + "'";
-			
-			/*String consulta = "select h from " + Hospitais2013.class.getName() + " h";*/
 			
 			TypedQuery<Hospitais2013> query = manager.createQuery(consulta, Hospitais2013.class);
 			List<Hospitais2013> hospitaisParcial = query.getResultList();
@@ -109,8 +101,6 @@ public class ManipularUnidadesSaude {
 		
 		String consulta = "SELECT H FROM " + Nasf.class.getName() + " H WHERE AREA = '" + nomeBairro + "'";
 		
-		/*String consulta = "select h from " + Nasf.class.getName() + " h";*/
-		
 		TypedQuery<Nasf> query = manager.createQuery(consulta, Nasf.class);
 		List<Nasf> nasf = query.getResultList();
 		
@@ -122,8 +112,6 @@ public class ManipularUnidadesSaude {
 		EntityManager manager = factory.createEntityManager();
 		
 		String consulta = "SELECT H FROM " + Policlinicas.class.getName() + " H WHERE BAIRRO = '" + nomeBairro + "'";
-		
-		/*String consulta = "select h from " + Policlinicas.class.getName() + " h";*/
 		
 		TypedQuery<Policlinicas> query = manager.createQuery(consulta, Policlinicas.class);
 		List<Policlinicas> policlinicas = query.getResultList();
@@ -137,8 +125,6 @@ public class ManipularUnidadesSaude {
 		
 		String consulta = "SELECT H FROM " + SaudeMental.class.getName() + " H WHERE BAIRRO = '" + nomeBairro + "'";
 		
-		/*String consulta = "select h from " + SaudeMental.class.getName() + " h";*/
-		
 		TypedQuery<SaudeMental> query = manager.createQuery(consulta, SaudeMental.class);
 		List<SaudeMental> caps = query.getResultList();
 		
@@ -150,8 +136,6 @@ public class ManipularUnidadesSaude {
 		EntityManager manager = factory.createEntityManager();
 		
 		String consulta = "SELECT H FROM " + Sadt.class.getName() + " H WHERE BAIRRO = '" + nomeBairro + "'";
-		
-		/*String consulta = "select h from " + Sadt.class.getName() + " h";*/
 		
 		TypedQuery<Sadt> query = manager.createQuery(consulta, Sadt.class);
 		List<Sadt> sadt = query.getResultList();
@@ -165,8 +149,6 @@ public class ManipularUnidadesSaude {
 		
 		String consulta = "SELECT H FROM " + Spa.class.getName() + " H WHERE BAIRRO = '" + nomeBairro + "'";
 		
-		/*String consulta = "select h from " + Spa.class.getName() + " h";*/
-		
 		TypedQuery<Spa> query = manager.createQuery(consulta, Spa.class);
 		List<Spa> spa = query.getResultList();
 		
@@ -178,9 +160,7 @@ public class ManipularUnidadesSaude {
 		EntityManager manager = factory.createEntityManager();
 		
 		String consulta = "SELECT H FROM " + Ubs.class.getName() + " H WHERE BAIRRO = '" + nomeBairro + "'";
-		
-		/*String consulta = "select h from " + Ubs.class.getName() + " h";*/
-		
+				
 		TypedQuery<Ubs> query = manager.createQuery(consulta, Ubs.class);
 		List<Ubs> ubs = query.getResultList();
 		
@@ -192,9 +172,7 @@ public class ManipularUnidadesSaude {
 		EntityManager manager = factory.createEntityManager();
 		
 		String consulta = "SELECT H FROM " + Usf.class.getName() + " H WHERE NOME_BAIRRO = '" + nomeBairro + "'";
-		
-		/*String consulta = "select h from " + Usf.class.getName() + " h";*/
-		
+				
 		TypedQuery<Usf> query = manager.createQuery(consulta, Usf.class);
 		List<Usf> usf = query.getResultList();
 		

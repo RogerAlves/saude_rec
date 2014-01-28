@@ -13,9 +13,14 @@
 
       	<properties>
       	  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			
+			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:mysql://ec2-50-19-213-178.compute-1.amazonaws.com:3306/saude_rec"/>
+			<property name="javax.persistence.jdbc.user" value="rogeralves"/>
+			<property name="javax.persistence.jdbc.password" value="espanha"/> -->         	
+			
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saude_rec"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>
-			<property name="javax.persistence.jdbc.password" value="espanha"/>         	
+			<property name="javax.persistence.jdbc.password" value="espanha"/>
       	
       		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
 
