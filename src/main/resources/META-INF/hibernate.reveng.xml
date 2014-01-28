@@ -18,6 +18,7 @@
   <table-filter match-catalog="saude_rec" match-name="hospitais_2013"/>
   <table-filter match-catalog="saude_rec" match-name="nasf"/>
   <table-filter match-catalog="saude_rec" match-name="policlinicas"/>
+  <table-filter match-catalog="saude_rec" match-name="ranking_bairros"/>
   <table-filter match-catalog="saude_rec" match-name="remocoes_2011"/>
   <table-filter match-catalog="saude_rec" match-name="remocoes_2012"/>
   <table-filter match-catalog="saude_rec" match-name="remocoes_2013"/>

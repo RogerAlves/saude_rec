@@ -9,7 +9,7 @@ import javax.persistence.TypedQuery;
 
 import model.Samu2011;
 
-public class ReadingTest{
+public class TesteLeitura{
 	
 	public static void main(String[] args) {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("saude_rec");
